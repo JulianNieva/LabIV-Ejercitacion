@@ -1,0 +1,28 @@
+<h1>Julian Leandro Nieva</h1>
+<hr>
+<router-outlet>
+    <div class="container">
+        <div class="mb-3">
+            <label class="form-label">Ingrese la primera edad</label>
+            <input type="text" class="form-control w-20" [(ngModel)]="edadUno">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ingrese la segunda edad</label>
+            <input type="text" class="form-control w-20" [(ngModel)]="edadDos">
+        </div>
+        <hr>
+        <p>Resultados</p>
+        <div class="mb-3">
+            <label class="form-label">Suma</label>
+            <input type="text" readonly class="form-control w-20" [(ngModel)]="suma">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Promedio</label>
+            <input type="text" readonly class="form-control w-20" [(ngModel)]="promedio">
+        </div>
+        <ul class="list-inline">
+            <button type="button" class="btn btn-primary" (click)="Calcular()">Calcular</button>
+            <button type="button" class="btn btn-primary mx-3" (click)="Limpiar()">Limpiar</button>
+        </ul>
+    </div>
+</router-outlet>
